@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node ./dist/server.js",
+    "dev": "nodemon ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ericblade/quagga2": "^1.8.4",
+    "javascript-barcode-reader": "^0.6.9",
+    "jimp": "^0.22.12",
+    "qrcode-reader": "^1.0.4",
+    "tesseract.js": "^5.0.5"
+  }
+}
