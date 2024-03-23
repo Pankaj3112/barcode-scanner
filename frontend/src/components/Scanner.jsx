@@ -14,7 +14,7 @@ const Scanner = () => {
   }, [barcode, navigate]);
 
   return (
-    <div className="h-full">
+    <div className="h-[90%]">
       <Initialize
         setResult={setBarcode}
         sizeConstraints={{
