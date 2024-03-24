@@ -90,7 +90,7 @@ const Product = () => {
 
   if (product) {
     return (
-      <div className="mb-20">
+      <div className="mb-20 mt-10">
         <div className="bg-white rounded-lg shadow-md p-4 flex items-center space-x-4">
           <div>
             <img
