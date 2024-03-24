@@ -6,11 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req: any, res: any) => {
+app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/product/:barcode", async (req: any, res: any) => {
+app.post("/product/:barcode", async (req, res) => {
   const { barcode } = req.params;
   const { fields } = req.body;
 
@@ -31,8 +31,8 @@ app.post("/product/:barcode", async (req: any, res: any) => {
 
 	data = data.product;
 	
-	const product: any = {};
-	fields.map((field: string) => {
+	const product = {};
+	fields.map((field) => {
 		product[field] = data[field];
 	})
 
@@ -45,3 +45,5 @@ app.post("/product/:barcode", async (req: any, res: any) => {
 app.listen(8000, () => {
   console.log("Server started on port 8000");
 });
+
+export default app;
