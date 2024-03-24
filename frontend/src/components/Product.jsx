@@ -35,7 +35,7 @@ const Product = () => {
       setLoading(true);
 
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/${barcode}`,
+        `${import.meta.env.VITE_SERVER_URL}/product/${barcode}`,
         options
       );
       const data = await response.json();
