@@ -9,7 +9,7 @@ const Navigation = () => {
     pathname === "/history" ? "text-blue-500": "text-gray-500";
 
   return (
-    <div className="absolute bottom-0 w-full text-center p-2 border-t border-t-gray-400 bg-gray-50 flex justify-around ">
+    <div className="fixed bottom-0 w-full max-w-sm text-center p-2 border-t border-t-gray-400 bg-gray-50 flex justify-around ">
       <Link to="/">
         <div className={"flex flex-col items-center text-sm " + scanColor}>
           <Camera />

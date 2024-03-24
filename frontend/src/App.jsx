@@ -3,7 +3,7 @@ import { Scanner, History, Product, Navigation } from "./components";
 
 function App() {
   return (
-    <div className="border border-black mx-auto h-[100vh] w-[100vw] max-w-sm max-h-[800px] relative">
+    <div className="border mx-auto h-[100vh] w-[100vw] max-w-sm max-h-[800px] relative overflow-y-scroll">
       <Router>
         <Routes>
           <Route path="/" element={<Scanner />} />
